@@ -26,11 +26,35 @@ const TableUI = ({ subjectData }) => {
       dataIndex: "title",
       key: "title",
       width: "30%",
+      defaultSortOrder: "descend",
+      sorter: (a, b) => {
+        var makeA = a.title.toUpperCase();
+        var makeB = b.title.toUpperCase();
+        if (makeA < makeB) {
+          return -1;
+        }
+        if (makeA > makeB) {
+          return 1;
+        }
+        return 0;
+      },
     },
     {
       title: "Author",
       dataIndex: "author",
       key: "author",
+      defaultSortOrder: "descend",
+      sorter: (a, b) => {
+        var makeA = a.author.toUpperCase();
+        var makeB = b.author.toUpperCase();
+        if (makeA < makeB) {
+          return -1;
+        }
+        if (makeA > makeB) {
+          return 1;
+        }
+        return 0;
+      },
     },
     {
       title: "Latest Publish Year",
