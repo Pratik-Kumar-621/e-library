@@ -1,0 +1,15 @@
+.subject_detail_main {
+  margin: 1.2rem 2rem;
+  .subject_heading {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.36rem;
+    strong {
+      text-transform: capitalize;
+    }
+  }
+  .book_list {
+    padding: 0.25rem 0;
+    font-size: 1.1rem;
+  }
+}

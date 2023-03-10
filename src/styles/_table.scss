@@ -1,0 +1,51 @@
+.table_data {
+  .ant-table {
+    margin-top: 1rem !important;
+    .ant-table-content {
+      border: 1px solid black !important;
+      border-radius: 7px;
+      max-width: 90%;
+      td,
+      th {
+        border: 0.1px solid #ababab !important;
+      }
+      thead {
+        th {
+          font-weight: 800;
+        }
+      }
+      tbody {
+        tr {
+          &:last-child {
+            td {
+              &:first-child {
+                border-radius: 0 0 0 7px;
+              }
+              &:last-child {
+                border-radius: 0 0 7px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.results {
+  font-size: 1.1rem;
+  font-weight: 400;
+  strong {
+    text-transform: capitalize;
+  }
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10%;
+  margin: 1.2rem 0 2rem;
+  .number_of_pages {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}

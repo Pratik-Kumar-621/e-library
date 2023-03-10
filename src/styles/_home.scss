@@ -1,0 +1,34 @@
+@import "./table";
+@import "./search";
+@import "./subjectDetail";
+
+.home_main {
+  display: grid;
+  grid-template-columns: 21rem auto;
+  min-height: 100vh;
+}
+
+.home_subjects {
+  padding: 1.2rem 1rem;
+  .subject_heading {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0 0 1rem 0;
+  }
+  input {
+    margin-bottom: 1rem;
+  }
+  .subject_lists {
+    display: flex;
+    flex-direction: column;
+    .link_book {
+      width: 100%;
+      button {
+        width: 100%;
+        margin: 0 0 0.5rem 0;
+        height: 2.5rem;
+        text-align: left !important;
+      }
+    }
+  }
+}
